@@ -6,6 +6,7 @@
     import { ArrowRight } from 'carbon-icons-svelte';
     import { navigate } from 'svelte-routing';
     import { authUser } from '../stores';
+    import logo from '../statics/img/logo.png'
 
     let is_registering = true;
     
@@ -100,7 +101,10 @@
         {/if}
     </div>
     <div class="custom-footer">
-        All rights reserved - Violex
+        <div class="flex">
+            <img src={logo} alt="logo" width="64px" class="mb-5"/>
+        </div>
+        <span>All rights reserved - Violex</span>
     </div>
 </div>
     
