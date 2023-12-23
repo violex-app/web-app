@@ -30,8 +30,8 @@
     <div class="columns mt-6 section-card ">
     <div class="column">
         <div style="margin-right: 25%;">
-        <h1>Practice in the most <span class="greate-vibes" style="font-size: 60px; color: #DDDBF1;"> perfect </span>way</h1>
-        <h2>No matter if you're a bigener or an expert violinist. You can unlock your full potential as a violinist with our intuitive platform.</h2>
+        <h1><span class="header">Practice in the most <span class="greate-vibes" style="font-size: 60px; color: #DDDBF1;"> perfect </span>way</span></h1>
+        <p class="description">No matter if you're a bigener or an expert violinist. You can unlock your full potential as a violinist with our intuitive platform.</p>
         <a class="button is-light has-text-white mt-4" style="background: #fc0a7e;" href="https://violex.app/dashboard"> Get started</a>
         </div>
     </div>
@@ -48,11 +48,14 @@
     <div class="section-card">
     <div class="rows">
         <div class="row ml-4">
-        <i class="fa fa-quote-left"></i>
-        <h1>
-            Practice does not make perfect; <br/><span class="greate-vibes" style="font-size: 42px; color: #dd1173;">perfect practice </span> makes perfect.
-        </h1>
-        <h3>- Vince Lombardi</h3>
+        <i class="garyout fa fa-quote-left"></i>
+        <h2>
+            <span class="header">Practice does not make perfect; </span>
+            <br/>
+            <span class="greate-vibes" style="font-size: 42px; color: #dd1173;">perfect practice </span> 
+            <span class="header">makes perfect.</span>
+        </h2>
+        <p class="garyout mt-2">- Vince Lombardi</p>
         </div>
         <div class="row mt-4" style="padding-bottom: 0px; right: 0;">
         <img src={violin} alt="application" style="scale: 104%;">
@@ -69,9 +72,9 @@
         </div>
         <div class="column mt-6">
         <div class="mt-4">
-            <h1 class="mt-2">We make sure you are <span class="greate-vibes" style="font-size: 48px; color: #dd1173;">practicing perfectly.</span></h1>
-            <p class="mt-2">For a musician, satisfaction might be felt when the music is played flawless. But it's not easy to get there. Traditional practice methods have limitations, and the goal of this application is to remove obstacles and limitations to let you get there faster in an enjoyable path.</p>
-            <p class="mt-2">And it all ends up in perfect frequencies and perfect timing. Without instant feedbacks, it's almost imposable to trace the quality of performance. But thanks to the technology, we've build a platform to guid you in the most efficient and perfect way, and now it's freely available on your finger tips. :)</p>
+            <h1 class="header mt-2">We make sure you are <span class="greate-vibes" style="font-size: 48px; color: #dd1173;">practicing perfectly.</span></h1>
+            <p class="description mt-2">For a musician, satisfaction might be felt when the music is played flawless. But it's not easy to get there. Traditional practice methods have limitations, and the goal of this application is to remove obstacles and limitations to let you get there faster in an enjoyable path.</p>
+            <p class="description mt-2">And it all ends up in perfect frequencies and perfect timing. Without instant feedbacks, it's almost imposable to trace the quality of performance. But thanks to the technology, we've build a platform to guid you in the most efficient and perfect way, and now it's freely available on your finger tips. :)</p>
         </div>
         </div>
     </div>
@@ -156,3 +159,18 @@
         Mahdi Massahi • <a href="mailto:mahdi.massahi@gmail.com">mahdi.massahi@gmail.com</a>
     </div>
 </footer>
+
+
+<style>
+    .header{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .description{
+        font-size: 20px;
+    }
+    .garyout{
+        font-size: 16px;
+        color: #4a4a4a;
+    }
+</style>
