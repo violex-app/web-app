@@ -32,7 +32,7 @@
         <div style="margin-right: 25%;">
         <h1>Practice in the most <span class="greate-vibes" style="font-size: 60px; color: #DDDBF1;"> perfect </span>way</h1>
         <h2>No matter if you're a bigener or an expert violinist. You can unlock your full potential as a violinist with our intuitive platform.</h2>
-        <a class="button is-light has-text-white mt-4" style="background: #fc0a7e;" href="https://violex.app/app.html"> Get started</a>
+        <a class="button is-light has-text-white mt-4" style="background: #fc0a7e;" href="https://violex.app/dashboard"> Get started</a>
         </div>
     </div>
     <div class="column">
