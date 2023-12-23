@@ -1,0 +1,33 @@
+<script>
+    import {
+      Header,
+      HeaderNav,
+      HeaderNavItem,
+      SkipToContent,
+      Content,
+      HeaderUtilities,
+      HeaderGlobalAction,
+    } from "carbon-components-svelte";
+    import UserAvatarFilledAlt from "carbon-icons-svelte/lib/UserAvatarFilledAlt.svelte";
+
+  </script>
+  
+  <Header company="Violex" platformName="Perfect Place to Practice Violin">
+    <svelte:fragment slot="skip-to-content">
+      <SkipToContent />
+    </svelte:fragment>
+    <HeaderNav>
+      <HeaderNavItem href="/" text="Home" />
+      <HeaderNavItem href="/" text="Explore" />
+      <HeaderNavItem href="/" text="Profile" />
+    </HeaderNav>
+
+    <HeaderUtilities>
+        <HeaderGlobalAction icon={UserAvatarFilledAlt} />
+    </HeaderUtilities>
+  </Header>
+  
+  <Content>
+    <slot></slot>
+  </Content>
+  
