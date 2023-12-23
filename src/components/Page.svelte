@@ -9,6 +9,7 @@
       HeaderGlobalAction,
     } from "carbon-components-svelte";
     import UserAvatarFilledAlt from "carbon-icons-svelte/lib/UserAvatarFilledAlt.svelte";
+    import { authUser } from "../stores";
 
   </script>
   
@@ -23,6 +24,9 @@
     </HeaderNav>
 
     <HeaderUtilities>
+        <div class="user-email">
+          {$authUser.email}
+        </div>
         <HeaderGlobalAction icon={UserAvatarFilledAlt} />
     </HeaderUtilities>
   </Header>
@@ -31,3 +35,11 @@
     <slot></slot>
   </Content>
   
+
+  <style>
+    .user-email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>

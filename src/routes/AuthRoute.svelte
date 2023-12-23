@@ -5,13 +5,13 @@
     import { TextInput, Button, ToastNotification } from 'carbon-components-svelte';
     import { ArrowRight } from 'carbon-icons-svelte';
     import { navigate } from 'svelte-routing';
+    import { authUser } from '../stores';
 
     let is_registering = true;
     
     let email="";
     let password="";
     let auth_message=" ";
-
     let success = undefined;
     
     const register = () => {
@@ -30,7 +30,11 @@
 
     const login = () => {
         signInWithEmailAndPassword(firebaseAuth, email, password)
-        .then(() => {
+        .then((userCredential) => {
+            $authUser = {
+                uid: userCredential.user.uid,
+                email: userCredential.user.email
+            };
             navigate("/dashboard");
         })
         .catch((error) => {

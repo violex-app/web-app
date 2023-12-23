@@ -1,10 +1,15 @@
 <script>
+    import { onMount } from "svelte";
     import Page from "../components/Page.svelte";
     import { 
         Grid,
         Row,
         Column,
     } from "carbon-components-svelte";
+
+    onMount(() => {
+
+    });
 </script>
 
 <Page>
