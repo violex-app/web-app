@@ -1,14 +1,21 @@
-
+import { 
+    PUBLIC_FB_API_KEY,  
+    PUBLIC_FB_AUTH_DOMAIN,
+    PUBLIC_FB_PROJECT_NAME,
+    PUBLIC_FB_STORAGE_BUCKET,
+    PUBLIC_FB_MESSAGING_SENDER_ID,
+    PUBLIC_FB_APP_ID
+} from '$env/static/public';
 import { initializeApp, getApps } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAtx1NFIjrdivF7PcTA3tjb5aA_GqoZEhI",
-    authDomain: "violex-app.firebaseapp.com",
-    projectId: "violex-app",
-    storageBucket: "violex-app.appspot.com",
-    messagingSenderId: "1082464376576",
-    appId: "1:1082464376576:web:7d30df3c66357b411145e5"
+    apiKey: PUBLIC_FB_API_KEY,
+    authDomain: PUBLIC_FB_AUTH_DOMAIN,
+    projectId: PUBLIC_FB_PROJECT_NAME,
+    storageBucket: PUBLIC_FB_STORAGE_BUCKET,
+    messagingSenderId: PUBLIC_FB_MESSAGING_SENDER_ID,
+    appId: PUBLIC_FB_APP_ID
 };
 
 // Initialize Firebase

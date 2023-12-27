@@ -1,8 +1,12 @@
 <script>
-    import screenshot from "../statics/img/screenshot.png";
-    import violin from "../statics/img/violin.png";
-    import waves from "../statics/img/waves.gif";
+
 </script>
+
+<svelte:head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Great+Vibes'>
+</svelte:head>
 
 <section class="section px-0 pt-0 grad" style="margin-bottom: -14%;">
     
@@ -37,7 +41,7 @@
     </div>
     <div class="column">
         <div>
-        <img src={screenshot} alt="application" style="scale: 120%; border-right-style: solid !important; border-color: transparent; border-right-width: 20px !important;">
+        <img src="./screenshot.png" alt="application" style="scale: 120%; border-right-style: solid !important; border-color: transparent; border-right-width: 20px !important;">
         </div>
     </div>
     </div>
@@ -58,7 +62,7 @@
         <p class="garyout mt-2">- Vince Lombardi</p>
         </div>
         <div class="row mt-4" style="padding-bottom: 0px; right: 0;">
-        <img src={violin} alt="application" style="scale: 104%;">
+        <img src="./violin.png" alt="application" style="scale: 104%;">
         </div>
     </div>
     </div>
@@ -68,7 +72,7 @@
     <div class="section-card my-0">
     <div class="columns">
         <div class="column">
-        <img src={waves} alt="application" style="scale: 100%;">
+        <img src="./waves.gif" alt="application" style="scale: 100%;">
         </div>
         <div class="column mt-6">
         <div class="mt-4">
@@ -86,7 +90,7 @@
     
     <div class="rows" id="features">
         <div class="row mb-4 has-text-centered">
-        <h1>Features</h1>
+        <h1 class="header">Features</h1>
         <p> We've tried to bring as much features as a violin player would except.</p>
         </div>
 
@@ -156,13 +160,17 @@
 <footer class="footer" style="background-color: #000000;">
     <div class="content has-text-centered">
         <h1 class="greate-vibes mb-0" style="font-size: 60px; color: white;">Violex</h1>
-        Mahdi Massahi • <a href="mailto:mahdi.massahi@gmail.com">mahdi.massahi@gmail.com</a>
+        © Mahdi Massahi - All rights reserved.
     </div>
 </footer>
 
 
 <style>
+    p,h1 {
+        color: white;
+    }
     .header{
+        color: white;
         font-size: 28px;
         font-weight: 500;
     }
@@ -173,4 +181,62 @@
         font-size: 16px;
         color: #4a4a4a;
     }
+
+.white-title{
+    color: white !important;
+    font-size: 20px;
+}
+.white-subtitle{
+    color: rgb(181, 181, 181) !important;
+    font-size: 18px;
+    font-style: italic;
+}
+.white-content{
+    margin-top: 5%;
+    color: rgb(255, 255, 255) !important;
+    font-size: 16px;
+}
+.navbar{
+    background: transparent;
+}
+.navbar-brand{
+    margin-left: 10% !important;
+}
+.navbar-menu{
+    height: 50px; 
+    margin-right: 10% !important;
+}
+.greate-vibes{
+    font-family: 'Great Vibes'; 
+    color: white; 
+}
+.navbar-item{
+    color: white;
+    background-color: transparent !important;
+    position: relative;
+}
+.navbar-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    background-color: transparent;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.navbar-item:hover::after {
+    background-color: red;
+}
+a.navbar-item:hover {
+    color: white;
+}
+.grad{
+    background-image: linear-gradient(to right bottom, #dd1173, #b20e71, #861168, #5c115a, #350e47);
+}
+.section-card{
+    margin-left: 10% !important; 
+    margin-right: 10% !important; 
+}
 </style>

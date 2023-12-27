@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+/* gold-nouveau theme */
+@font-face {
+	font-family: 'Quicksand';
+	src: url('/fonts/Quicksand.ttf');
+	font-display: swap;
+}
+
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('/fonts/GreatVibes-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+.great-vibes {
+  font-family: 'Great Vibes', cursive; /* Fallback to a generic font family */
+}
+
+h1 {
+  font-size: x-large;
+}
+
+.link {
+  color: #2469ff;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+input {
+  padding: 5px;
+  padding-left: 8px;
+}
+
+input:focus {
+  border-color: transparent  !important; 
+}
