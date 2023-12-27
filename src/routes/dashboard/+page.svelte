@@ -1,1 +1,1 @@
-Welcome to Dashboard 
+Welcome to Violex's Dashboard 
