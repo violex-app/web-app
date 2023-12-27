@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '18'
       - name: Install npm dependencies
-        run: npm install --force
+        run: npm install
       - name: Create .env file
         run: |
           echo "PUBLIC_FB_API_KEY=${{ secrets.PUBLIC_FB_API_KEY }}" >> .env
@@ -34,3 +34,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VIOLEX_APP }}'
           channelId: live
           projectId: violex-app
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
